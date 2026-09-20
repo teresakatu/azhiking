@@ -4,8 +4,6 @@
   padding: 0 24px 64px;
 }
 
-/* ---------- Hero banner ---------- */
-
 .hero-band {
   position: relative;
   width: 100vw;
@@ -32,37 +30,45 @@
 
 .hero-eyebrow {
   margin: 0 0 10px;
-  font-size: 0.9rem;
+  font-size: 15px;
   color: #e8b563;
   font-weight: 500;
 }
 
 .hero-title {
-  font-size: clamp(2.1rem, 4.2vw, 3.2rem);
+  font-size: 40px;
   line-height: 1.1;
   font-weight: 700;
-  max-width: 16ch;
+  max-width: 480px;
   color: #f8f5ec;
 }
 
 .site-subtitle {
   margin: 28px 0 0;
-  max-width: 56ch;
-  font-size: 1.05rem;
+  max-width: 620px;
+  font-size: 17px;
   line-height: 1.6;
-  color: rgba(38, 49, 41, 0.82);
+  color: #3c4a41;
 }
-
-/* ---------- Board grid ---------- */
 
 .board {
   margin-top: 40px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-columns: 1fr;
   gap: 20px;
 }
 
-/* ---------- Trail card ---------- */
+@media (min-width: 700px) {
+  .board {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  .board {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 
 .trail-card {
   position: relative;
@@ -96,31 +102,30 @@
 }
 
 .trail-card__badge {
-  font-size: 0.72rem;
+  font-size: 12px;
   font-weight: 600;
-  letter-spacing: 0.03em;
   padding: 3px 10px;
   border-radius: 999px;
   border: 1px solid var(--line);
-  color: rgba(38, 49, 41, 0.75);
+  color: #3c4a41;
   white-space: nowrap;
 }
 
 .trail-card__location {
-  font-size: 0.8rem;
+  font-size: 13px;
   color: var(--sienna);
   font-weight: 500;
   text-align: right;
 }
 
 .trail-card__name {
-  font-size: 1.3rem;
+  font-size: 21px;
   line-height: 1.25;
 }
 
 .trail-card__stats {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 8px;
   margin: 0;
   padding: 12px 0;
@@ -129,22 +134,22 @@
 }
 
 .trail-card__stats dt {
-  font-size: 0.68rem;
-  color: rgba(38, 49, 41, 0.6);
+  font-size: 11px;
+  color: #5d6b62;
   margin-bottom: 3px;
 }
 
 .trail-card__stats dd {
   margin: 0;
   font-weight: 600;
-  font-size: 0.92rem;
+  font-size: 15px;
 }
 
 .trail-card__blurb {
   margin: 0;
-  font-size: 0.94rem;
+  font-size: 15px;
   line-height: 1.55;
-  color: rgba(38, 49, 41, 0.85);
+  color: #33413a;
   flex-grow: 1;
 }
 
@@ -152,7 +157,7 @@
   align-self: flex-start;
   text-decoration: none;
   font-weight: 600;
-  font-size: 0.92rem;
+  font-size: 15px;
   color: var(--teal);
   border-bottom: 1px solid transparent;
 }
@@ -161,18 +166,13 @@
   border-bottom-color: var(--teal);
 }
 
-/* ---------- Footer ---------- */
-
 .site-footer {
   margin-top: 56px;
   padding-top: 24px;
   border-top: 1px solid var(--line);
-  font-size: 0.9rem;
-  color: rgba(38, 49, 41, 0.65);
-  max-width: 60ch;
+  font-size: 14px;
+  color: #5d6b62;
 }
-
-/* ---------- Responsive ---------- */
 
 @media (max-width: 640px) {
   .hero-illustration {
@@ -183,12 +183,7 @@
     padding-bottom: 24px;
   }
 
-  .board {
-    grid-template-columns: 1fr;
-  }
-
   .trail-card__stats {
-    grid-template-columns: repeat(3, 1fr);
     gap: 4px;
   }
 }
