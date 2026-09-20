@@ -1,0 +1,148 @@
+const trails = [
+  {
+    id: 1,
+    name: "Camelback Mountain — Echo Canyon Trail",
+    location: "Phoenix",
+    distance: "2.4 mi",
+    type: "Out & back",
+    difficulty: "Hard",
+    elevation: "1,400 ft",
+    blurb:
+      "Phoenix's signature summit hike: steep rock scrambling with handrails most of the way up. Extremely popular, so get there early — the lot fills fast.",
+    mapUrl: "https://www.alltrails.com/search?q=Camelback%20Mountain%20Echo%20Canyon",
+  },
+  {
+    id: 2,
+    name: "Piestewa Peak Summit Trail",
+    location: "Phoenix",
+    distance: "2.4 mi",
+    type: "Out & back",
+    difficulty: "Hard",
+    elevation: "1,200 ft",
+    blurb:
+      "A steep, switchbacking climb up the second-tallest peak in the Phoenix Mountains Preserve, with skyline views of the whole valley from the top.",
+    mapUrl: "https://www.alltrails.com/search?q=Piestewa%20Peak%20Summit%20Trail",
+  },
+  {
+    id: 3,
+    name: "Devil's Bridge Trail",
+    location: "Sedona",
+    distance: "4.0 mi",
+    type: "Out & back",
+    difficulty: "Moderate",
+    elevation: "400 ft",
+    blurb:
+      "Leads to the largest natural sandstone arch in Coconino National Forest — one of the most photographed spots in Sedona. Expect company and tight parking.",
+    mapUrl: "https://www.alltrails.com/search?q=Devils%20Bridge%20Trail%20Sedona",
+  },
+  {
+    id: 4,
+    name: "Cathedral Rock Trail",
+    location: "Sedona",
+    distance: "1.5 mi",
+    type: "Out & back",
+    difficulty: "Hard",
+    elevation: "700 ft",
+    blurb:
+      "Short but steep, with hands-on rock scrambling near the top. The saddle at the end is one of Sedona's well-known vortex sites and a favorite sunset spot.",
+    mapUrl: "https://www.alltrails.com/search?q=Cathedral%20Rock%20Trail%20Sedona",
+  },
+  {
+    id: 5,
+    name: "Humphreys Peak Trail",
+    location: "Flagstaff",
+    distance: "9.6 mi",
+    type: "Out & back",
+    difficulty: "Hard",
+    elevation: "3,300 ft",
+    blurb:
+      "The hike to the top of Arizona — through pine and aspen forest, above the treeline, to a rocky, wind-exposed summit at 12,633 feet.",
+    mapUrl: "https://www.alltrails.com/search?q=Humphreys%20Peak%20Trail",
+  },
+  {
+    id: 6,
+    name: "South Kaibab Trail to Cedar Ridge",
+    location: "Grand Canyon National Park",
+    distance: "3.0 mi",
+    type: "Out & back",
+    difficulty: "Hard",
+    elevation: "1,140 ft",
+    blurb:
+      "A ridgeline descent into the canyon with wide-open views the whole way. No shade and no water on this trail, so it's the recommended summer turnaround point.",
+    mapUrl: "https://www.alltrails.com/search?q=South%20Kaibab%20Trail%20Cedar%20Ridge",
+  },
+  {
+    id: 7,
+    name: "Bright Angel Trail to 1.5-Mile Resthouse",
+    location: "Grand Canyon National Park",
+    distance: "3.0 mi",
+    type: "Out & back",
+    difficulty: "Moderate",
+    elevation: "1,100 ft",
+    blurb:
+      "The canyon's most-maintained corridor trail, passing through two rock tunnels on the way down to the first resthouse and water stop.",
+    mapUrl: "https://www.alltrails.com/search?q=Bright%20Angel%20Trail%201.5%20Mile%20Resthouse",
+  },
+  {
+    id: 8,
+    name: "Peralta Trail to Fremont Saddle",
+    location: "Superstition Wilderness",
+    distance: "4.8 mi",
+    type: "Out & back",
+    difficulty: "Moderate",
+    elevation: "1,400 ft",
+    blurb:
+      "Climbs a saguaro-lined desert canyon to a saddle with a classic view of Weaver's Needle, a 1,000-foot volcanic spire tied to Lost Dutchman legend.",
+    mapUrl: "https://www.alltrails.com/search?q=Peralta%20Trail%20Fremont%20Saddle",
+  },
+  {
+    id: 9,
+    name: "Hunter Trail — Picacho Peak",
+    location: "Picacho",
+    distance: "3.1 mi",
+    type: "Out & back",
+    difficulty: "Hard",
+    elevation: "1,500 ft",
+    blurb:
+      "A steep scramble up cable-assisted rock faces to the summit of the landmark peak you can see from I-10 between Phoenix and Tucson. Bring gloves.",
+    mapUrl: "https://www.alltrails.com/search?q=Hunter%20Trail%20Picacho%20Peak",
+  },
+  {
+    id: 10,
+    name: "Seven Falls via Bear Canyon",
+    location: "Tucson",
+    distance: "8.2 mi",
+    type: "Out & back",
+    difficulty: "Moderate",
+    elevation: "900 ft",
+    blurb:
+      "Follows Bear Canyon past saguaro and sycamore to a series of pools and cascades — a favorite cool-off spot outside Tucson. Dogs aren't allowed.",
+    mapUrl: "https://www.alltrails.com/search?q=Seven%20Falls%20Bear%20Canyon%20Tucson",
+  },
+  {
+    id: 11,
+    name: "West Fork of Oak Creek Trail",
+    location: "Oak Creek Canyon",
+    distance: "6.0 mi",
+    type: "Out & back",
+    difficulty: "Easy",
+    elevation: "220 ft",
+    blurb:
+      "A mostly flat, shaded walk with more than a dozen creek crossings through a narrowing red-rock canyon. One of the most popular trails in the state.",
+    mapUrl: "https://www.alltrails.com/search?q=West%20Fork%20Oak%20Creek%20Trail",
+  },
+  {
+    id: 12,
+    name: "Rim Trail: Mather Point to Yavapai Point",
+    location: "Grand Canyon National Park",
+    distance: "2.7 mi",
+    type: "Out & back",
+    difficulty: "Easy",
+    elevation: "100 ft",
+    blurb:
+      "A paved, mostly level stretch of the canyon's rim with sweeping views the entire way — the easiest, most accessible way to take in the Grand Canyon.",
+    mapUrl: "https://www.alltrails.com/search?q=Grand%20Canyon%20Rim%20Trail%20Mather%20Point",
+  },
+];
+
+export default trails;
